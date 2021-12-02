@@ -168,14 +168,17 @@ main.container section.content h1 {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-size: 7.35rem;
+  position: relative;
 }
 
 main.container section.content p {
   color: #db2267;
   text-align: right;
-  margin-top: -0.5rem;
+  margin-top: -0.75rem;
+  margin-left: 27rem;
   font-family: 'Cute Font', cursive;
   font-size: 2.1rem;
+  position: absolute;
 }
 
 main.container section.content a {

@@ -3,19 +3,25 @@
   <head>
     <title>Ty Simpson - Full Stack Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
+      href="css/style.css"
+      type="text/css"
+      media="screen"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cute+Font|Roboto+Slab&display=swap">
+    <script
+      src="https://kit.fontawesome.com/dc5d167e3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cute+Font|Roboto+Slab&display=swap"
+    />
   </head>
   <body>
     <main class="container">
@@ -29,33 +35,36 @@
       <a
         class="tw"
         href="https://twitter.com/iambitfrost"
-        title="Ty Simpson on Twitter"
+        title="IAmBitfrost on Twitter"
         ><i class="fab fa-twitter"></i
       ></a>
       <a
         class="ig"
         href="https://www.instagram.com/bitfrost/"
-        title="Ty Simpson on Instagram"
+        title="bitfrost on Instagram"
         ><i class="fab fa-instagram"></i
       ></a>
       <a
         class="git"
         href="https://github.com/IAmBitfrost"
-        title="Ty Simpson on Github"
+        title="IAmBitfrost on Github"
         ><i class="fab fa-github"></i
       ></a>
+      <a class="linkedin" title="Ty Simpson on LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
     </footer>
 
     <script>
-      var showText = function(target, message, index, interval) {
+      var showText = function (target, message, index, interval) {
         if (index < message.length) {
           $(target).append(message[index++]);
-          setTimeout(function() {
+          setTimeout(function () {
             showText(target, message, index, interval);
           }, interval);
         }
       };
-      $(function() {
+      $(function () {
         showText("#desc", "        Full Stack Development", 0, 100);
       });
     </script>

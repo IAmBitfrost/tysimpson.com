@@ -234,6 +234,14 @@ footer a.linkedin:hover {
 	color: #0E76A8;
 	transition: all 0.5s ease;
 }
+footer a.discord:hover {
+	color: #5865F2;
+	transition: all 0.5s ease;
+}
+footer a.bsky:hover {
+	color: skyblue;
+	transition: all 0.5s ease;
+}
 
 /***** Responsiveness *****/
 @media all and (max-width: 740px) {

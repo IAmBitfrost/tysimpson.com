@@ -1,84 +1,54 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-  <head>
-    <title>Ty Simpson - Full Stack Development</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="css/style.css"
-      type="text/css"
-      media="screen"
-    />
-    <script
-      src="https://kit.fontawesome.com/dc5d167e3d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Cute+Font|Roboto+Slab&display=swap"
-    />
-  </head>
-  <body>
-    <main class="container">
-      <section class="content">
-        <h1>Ty Simpson</h1>
-        <p id="desc"></p>
-      </section>
-    </main>
 
-    <footer>
-      <a
-        class="bsky"
-        href="https://bsky.app/profile/bitfrost.gg"
-        title="@bitfrost.gg on Bluesky"
-        ><i class="fas fa-cloud"></i>
-      </a>
-      <a
-        class="tw"
-        href="https://twitter.com/iambitfrost"
-        title="IAmBitfrost on Twitter"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a
-        class="ig"
-        href="https://www.instagram.com/bitfrost/"
-        title="bitfrost on Instagram"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <a
-        class="discord"
-        href="https://www.discord.com/users/154269563423424513"
-        title="Ty | Bitfrost#8888 on Discord"><i class="fab fa-discord"></i></a>
-      <a
-        class="git"
-        href="https://github.com/IAmBitfrost"
-        title="IAmBitfrost on Github"
-        ><i class="fab fa-github"></i
-      ></a>
-      <a class="linkedin"
-      href="https://www.linkedin.com/in/bitfrost/"
-      title="Ty Simpson on LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </footer>
+<head>
+  <title>Ty Simpson - Full Stack Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <script src="https://kit.fontawesome.com/dc5d167e3d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cute+Font|Roboto+Slab&display=swap" />
+</head>
 
-    <script>
-      var showText = function (target, message, index, interval) {
-        if (index < message.length) {
-          $(target).append(message[index++]);
-          setTimeout(function () {
-            showText(target, message, index, interval);
-          }, interval);
-        }
-      };
-      $(function () {
-        showText("#desc", "        Full Stack Development", 0, 100);
-      });
-    </script>
-  </body>
+<body>
+  <main class="container">
+    <section class="content">
+      <h1>Ty Simpson</h1>
+      <p id="desc"></p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="flickr" href="https://www.flickr.com/people/bitfrost/" title="IAmBitfrost on Flickr"><i
+        class="fab fa-flickr"></i>
+    </a>
+    <a class="ig" href="https://www.instagram.com/bitfrost/" title="bitfrost on Instagram"><i
+        class="fab fa-instagram"></i></a>
+    <a class="discord" href="https://www.discord.com/users/154269563423424513" title="Ty | Bitfrost on Discord"><i
+        class="fab fa-discord"></i></a>
+    <a class="git" href="https://github.com/IAmBitfrost" title="IAmBitfrost on Github"><i class="fab fa-github"></i></a>
+    <a class="linkedin" href="https://www.linkedin.com/in/bitfrost/" title="Ty Simpson on LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </footer>
+
+  <script>
+    var showText = function (target, message, index, interval) {
+      if (index < message.length) {
+        $(target).append(message[index++]);
+        setTimeout(function () {
+          showText(target, message, index, interval);
+        }, interval);
+      }
+    };
+    $(function () {
+      showText("#desc", "        Full Stack Development", 0, 100);
+    });
+  </script>
+</body>
+
 </html>
